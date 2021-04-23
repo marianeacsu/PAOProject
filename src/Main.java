@@ -116,6 +116,17 @@ public class Main {
 
         System.out.println("\nComenzile primite de restaurantul specificat sunt:");
         service.getOrdersofSpecificRestaurant(restaurant1,orders);
+        
+        //print ingredients of a product
+        System.out.println("\nIngredientele pentru " + product1.getName() + " sunt:");
+        service.printProductIngredients(product1);
+
+        //add allergen
+        System.out.println("\nVerificam daca in lista alergenilor pentru " + product1.getName() + " se afla lactoza:");
+        service.addAllergensProduct(product1, "lactoza");
+
+        System.out.println("\nVerificam daca in lista alergenilor pentru " + product2.getName() + " se afla lactoza:");
+        service.addAllergensProduct(product2, "lactoza");
 
 
     }
