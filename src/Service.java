@@ -128,6 +128,42 @@ public class Service {
 
     }
 
+    
+    public void printProductIngredients(Product product){
+        String[] ing = product.getIngredients();
+        int i;
+        for(i=0; i<ing.length; i++) {
+            System.out.println(ing[i].toString());
+        }
+    }
+
+
+    public void addAllergensProduct(Product product, String allergen) {
+        String[] all = product.getAllergens();
+        int i, ok=0;
+        for(i=0 ; i<all.length; i++) {
+            if(allergen == all[i].toString())
+                ok=1;
+        }
+        if(ok==0){
+           int n= all.length;
+           n++;
+           String[] newall = new String[n];
+           for(i=0; i<all.length; i++) {
+                newall[i] = all[i].toString();
+           }
+
+           newall[n-1] = allergen.toString();
+           
+        }
+
+        if(ok==1){
+            System.out.println("Alergenul se afla in lista!");
+        }
+        else{
+            System.out.println("Am adaugat cu succes alergenul " + allergen + " in lista!");
+        }
+    }
 
 
 
