@@ -16,3 +16,5 @@ Acesta are functionalitati precum:
 - afisarea tuturor comenzilor efectuate de clienti
 - afisarea tuturor comenzilor efectuate intr-o anumita zi
 - afisarea tuturor comenzilor de la un restaurant anume
+- afisarea ingredientelor unui produs
+- adaugarea unui alergen in lista de alergeni a unui produs
