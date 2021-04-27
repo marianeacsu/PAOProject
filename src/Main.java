@@ -127,6 +127,11 @@ public class Main {
 
         System.out.println("\nVerificam daca in lista alergenilor pentru " + product2.getName() + " se afla lactoza:");
         service.addAllergensProduct(product2, "lactoza");
+        
+        ReadFromCSV.CSVDriver();
+        ReadFromCSV.CSVClient();
+        ReadFromCSV.CSVProduct();
+        ReadFromCSV.CSVLocation();
 
 
     }
