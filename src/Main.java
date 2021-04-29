@@ -128,6 +128,10 @@ public class Main {
         System.out.println("\nVerificam daca in lista alergenilor pentru " + product2.getName() + " se afla lactoza:");
         service.addAllergensProduct(product2, "lactoza");
         
+        writeToCSV.writeRestaurant(restaurant1,"write_restaurant.csv");
+        writeToCSV.writeClient(client1,"write_client.csv");
+        writeToCSV.writeDriver(driver1,"write_driver.csv");
+        writeToCSV.writeLocation(location1,"write_location.csv");
         ReadFromCSV.CSVDriver();
         ReadFromCSV.CSVClient();
         ReadFromCSV.CSVProduct();
